@@ -1,13 +1,10 @@
 export const fizzbuzz = (number) => {
-    let data = ' '
+    let data = ''
     if (number % 3 == 0) {
-        data = "Fizz"
-      return data
+        data += "Fizz"
     }
     if (number % 5 == 0) {
-        data =+ "Buzz"
-      return data
+        data += "Buzz"
     }
-    return number
-  }
-  
+    return data || number
+}

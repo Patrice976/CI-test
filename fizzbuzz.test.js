@@ -11,3 +11,7 @@ test("check if multiple of 5 return Buzz ", () => {
 test("check if multiple of 5 and 3 return FizzBuzz ", () => {
     expect(fizzbuzz(15)).toBe("FizzBuzz")
 })
+
+test("check if neither multiple of 5 or 3 return number ", () => {
+    expect(fizzbuzz(7)).toBe(7)
+})
